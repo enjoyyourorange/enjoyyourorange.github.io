@@ -4,16 +4,6 @@ Intro to Prog Python Webpage
 <!DOCTYPE html>
 <html>
 <head>
-<title>W3.CSS Template</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<style>
-body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
-</style>
-</head>
-<body class="w3-light-grey">
 
 <!-- w3-content defines a container for fixed size centered content, 
 and is wrapped around the whole page content, except for the footer in this example -->
@@ -21,133 +11,121 @@ and is wrapped around the whole page content, except for the footer in this exam
 
 <!-- Header -->
 <header class="w3-container w3-center w3-padding-32"> 
-  <h1><b>MY BLOG</b></h1>
-  <p>Welcome to the blog of <span class="w3-tag">unknown</span></p>
-</header>
+  <h1><b>Assignment 07</b></h1>
+   </header>
 
-<!-- Grid -->
-<div class="w3-row">
+<p>
+  <b>Introduction</b>
+</p>
 
-<!-- Blog entries -->
-<div class="w3-col l8 s12">
-  <!-- Blog entry -->
-  <div class="w3-card-4 w3-margin w3-white">
-    <img src="/w3images/woods.jpg" alt="Nature" style="width:100%">
-    <div class="w3-container">
-      <h3><b>TITLE HEADING</b></h3>
-      <h5>Title description, <span class="w3-opacity">April 7, 2014</span></h5>
-    </div>
+<p>
 
-    <div class="w3-container">
-      <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed
-        tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-      <div class="w3-row">
-        <div class="w3-col m8 s12">
-          <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
-        </div>
-        <div class="w3-col m4 w3-hide-small">
-          <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-tag">0</span></span></p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <hr>
+This assignment is focusing on pickling and utilizing try-exception blocks of code to not allow the user to input anything that may break our program or cause any unintended functionalities. I created a simple program that asks users to enter names or characters, and then simply pickles the entries to a file and unpickles them upon user request. 
+</p>
 
-  <!-- Blog entry -->
-  <div class="w3-card-4 w3-margin w3-white">
-  <img src="/w3images/bridge.jpg" alt="Norway" style="width:100%">
-    <div class="w3-container">
-      <h3><b>BLOG ENTRY</b></h3>
-      <h5>Title description, <span class="w3-opacity">April 2, 2014</span></h5>
-    </div>
 
-    <div class="w3-container">
-      <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed
-        tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-      <div class="w3-row">
-        <div class="w3-col m8 s12">
-          <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
-        </div>
-        <div class="w3-col m4 w3-hide-small">
-          <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-badge">2</span></span></p>
-        </div>
-      </div>
-    </div>
-  </div>
-<!-- END BLOG ENTRIES -->
-</div>
+<p>
+  <b>Pickling in Python</b>
+</p>
+<p>
+I began this assignment by creating some functions that will pickle, that is, serialize the entries given by the user, as well as append additional entries to our name list. 
+	Saving the pickle file, using append binary mode: 
+  <img width="400" alt="Screen Shot 2022-08-27 at 12 22 46 PM" src="https://user-images.githubusercontent.com/100233225/187046068-717a29b4-1b84-4513-a02c-c66a3b377ddd.png">
+</p>
 
-<!-- Introduction menu -->
-<div class="w3-col l4">
-  <!-- About Card -->
-  <div class="w3-card w3-margin w3-margin-top">
-  <img src="/w3images/avatar_g.jpg" style="width:100%">
-    <div class="w3-container w3-white">
-      <h4><b>My Name</b></h4>
-      <p>Just me, myself and I, exploring the universe of uknownment. I have a heart of love and a interest of lorem ipsum and mauris neque quam blog. I want to share my world with you.</p>
-    </div>
-  </div><hr>
+<p>
+	Reading from pickle file using read binary and printing the result from the load:
+  </p>
+
+  <p>
   
-  <!-- Posts -->
-  <div class="w3-card w3-margin">
-    <div class="w3-container w3-padding">
-      <h4>Popular Posts</h4>
-    </div>
-    <ul class="w3-ul w3-hoverable w3-white">
-      <li class="w3-padding-16">
-        <img src="/w3images/workshop.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
-        <span class="w3-large">Lorem</span><br>
-        <span>Sed mattis nunc</span>
-      </li>
-      <li class="w3-padding-16">
-        <img src="/w3images/gondol.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
-        <span class="w3-large">Ipsum</span><br>
-        <span>Praes tinci sed</span>
-      </li> 
-      <li class="w3-padding-16">
-        <img src="/w3images/skies.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
-        <span class="w3-large">Dorum</span><br>
-        <span>Ultricies congue</span>
-      </li>   
-      <li class="w3-padding-16 w3-hide-medium w3-hide-small">
-        <img src="/w3images/rock.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
-        <span class="w3-large">Mingsum</span><br>
-        <span>Lorem ipsum dipsum</span>
-      </li>  
-    </ul>
-  </div>
-  <hr> 
+<img width="413" alt="Screen Shot 2022-08-27 at 12 22 56 PM" src="https://user-images.githubusercontent.com/100233225/187046158-7396b49d-9376-4ea6-8b1e-cb74c9afe45d.png">
+</p>
+  
+<p>
+	Then, I needed a function that will append the user entries to a list to be recalled later:
+  <img width="380" alt="Picture1" src="https://user-images.githubusercontent.com/100233225/187046284-6857d28b-0e2b-4536-8c07-a9d1ff27a678.png">
+
+
+
+</p>
  
-  <!-- Labels / tags -->
-  <div class="w3-card w3-margin">
-    <div class="w3-container w3-padding">
-      <h4>Tags</h4>
-    </div>
-    <div class="w3-container w3-white">
-    <p><span class="w3-tag w3-black w3-margin-bottom">Travel</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">New York</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">London</span>
-      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">IKEA</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">NORWAY</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">DIY</span>
-      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Ideas</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Baby</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Family</span>
-      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">News</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Clothing</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Shopping</span>
-      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Sports</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Games</span>
-    </p>
-    </div>
-  </div>
+<p>
+I quickly realized that when reading, or loading from a pickle file, that it will only grab the first entry given. I wanted a function that would allow continuous pickle loads until reaching the end of the file. To do this, we use a try-except block within a while loop that will continue loading until it receives an end of file error:  
+
+  </p>
+  <p>
+    
+<img width="460" alt="Picture2" src="https://user-images.githubusercontent.com/100233225/187046288-daa86c95-f7bb-4cad-9c52-ad3129be9753.png">
+
+ <p>
+  <b>Try-Except Handling</b>
+</p> 
+
+<p>
+  Now that we had established the functions that will pickle user entries, save them to files, and allow them to be unpickled/recalled, I wanted to create some try-except blocks to prevent the user from entering things into my program that would either be pointless, or break my program.
+ </p>
   
-<!-- END Introduction Menu -->
-</div>
+ <p>
+  
+Because my menu only has three options, I didn’t want to allow the user to enter anything that was not listed. To do this, I created a try-except block that will raise a value error in the event a user enters a character rather than one of the integers in the menu:
+  
+ </p>
+  
+<p>
+  
+  <img width="468" alt="Pictur3e1" src="https://user-images.githubusercontent.com/100233225/187046336-d5835783-d734-41a3-b3ad-4fa5c18407dc.png">
+  </p>
+  
+<p>
+Then, I realized that still allowed the user to enter any integer value that wasn’t listed on my menu. Now, this doesn’t break my program or anything, but it’s a pointless function and doesn’t look very nice. So, I created a couple if statements that would not return the user entry unless it was either a 1, 2, or 3:</p>
+  
+  
+<p>
+  <img width="400" alt="Pictur4" src="https://user-images.githubusercontent.com/100233225/187046364-93e75e13-0138-4d08-8e64-e6272d6315b2.png">
 
-<!-- END GRID -->
-</div><br>
+  </p>
 
-<!-- END w3-content -->
-</div>
+<p>
+	Then, it was time to create the main body of the script that would call my created functions. If the user selects 1, the program will ask the user to enter a list of characters. I specifically did not want to allow integers, but I was having some trouble making this happen, because the value error exception was not working for the inverse of my previous usage. To remedy that, I imported the regular expression module and created an if statement that only allowed characters that match the library’s A-Z characters:
+  
+  </p>
+  
+  
+<p>
+<img width="468" alt="Picture5" src="https://user-images.githubusercontent.com/100233225/187046377-957b3b96-7c7f-4f01-b1e6-03171151f31d.png">
+  
+  </p>
+  
+<p>
+Next, if the user’s entry was acceptable, I simply called my add_to_pickle and save_to_pickle functions to append the entry and save the pickle file: 
+  </p>
+  
+  
+  <p>
+  <img width="325" alt="Pictur6e1" src="https://user-images.githubusercontent.com/100233225/187046454-17dba6df-de1b-4ed7-9fe0-5635752f7951.png">
 
-<!-- Footer -->
-<footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top">
-  <button class="w3-button w3-black w3-disabled w3-padding-large w3-margin-bottom">Previous</button>
-  <button class="w3-button w3-black w3-padding-large w3-margin-bottom">Next »</button>
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
-</footer>
+  </p>
+  
+ <p>
+	Finally, if the user’s entry was 2, our program simply calls load_all_pickle to loop through the saved pickle file and keep loading until it reaches the end of file error. And if the user chooses entry 3 the program will simply break and close:  
+  
+  </p>
+  
+  
+  <p>
+<img width="347" alt="Picture7" src="https://user-images.githubusercontent.com/100233225/187046467-b9c8d6ec-4787-4be9-ba6c-d0b0eb58b0e9.png">
 
-</body>
+  </p>
+  
+  <p>
+    <b>Summary</b>
+</p>
+  
+  
+  <p>
+  	This assignment was pretty fun and a good learning experience. Working with pickle files was pretty enlightening and confusing at times, I ran into some strange Unicode issues that was a good learning experience to hash out. I really enjoyed creating the try-except blocks, especially with the load_all_pickle function that utilized the EOFError, as trying to find ways to load all the entries was driving me a bit crazy. The importing of modules is really interesting, too, feels like that’s a huge part of programming in Python that we’re just getting into. 
+  </p>
+    
+
 </html>
