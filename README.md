@@ -1,7 +1,6 @@
 # enjoyyourorange.github.io
 Intro to Prog Python Webpage
 
-<!DOCTYPE html>
 <html>
 <head>
 
