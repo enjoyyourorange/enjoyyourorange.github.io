@@ -86,23 +86,21 @@ Then, I realized that still allowed the user to enter any integer value that was
   </p>
 
 <p>
-	Then, it was time to create the main body of the script that would call my created functions. If the user selects 1, the program will ask the user to enter a list of characters. I specifically did not want to allow integers, but I was having some trouble making this happen, because the value error exception was not working for the inverse of my previous usage. To remedy that, I imported the regular expression module and created an if statement that only allowed characters that match the library’s A-Z characters:
-  
+	If the user selects 1, the program will ask the user to enter a list of characters. I specifically did not want to allow integers, but I was having some trouble making this happen, because the value error exception was not working for the inverse of my previous usage. To remedy that, I imported the regular expression module and created an if statement that only allowed characters that match the library’s A-Z characters:  
   </p>
   
   
 <p>
-<img width="468" alt="Picture5" src="https://user-images.githubusercontent.com/100233225/187046377-957b3b96-7c7f-4f01-b1e6-03171151f31d.png">
-  
+  <img width="737" alt="Screen Shot 2022-08-28 at 12 02 08 PM" src="https://user-images.githubusercontent.com/100233225/187090520-3fa72b51-98a7-4fe7-909d-05291eca54a5.png">
+
   </p>
   
 <p>
-Next, if the user’s entry was acceptable, I simply called my add_to_pickle and save_to_pickle functions to append the entry and save the pickle file: 
-  </p>
-  
+Then once the user selects 1, and the user’s entry was acceptable, the user_entry function will call my add and save to pickle functions I created earlier.  </p>
+  <img width="473" alt="Screen Shot 2022-08-28 at 12 04 12 PM" src="https://user-images.githubusercontent.com/100233225/187090530-df434d99-7b9d-48ae-a260-f5dcd00d3cf3.png">
+
   
   <p>
-  <img width="325" alt="Pictur6e1" src="https://user-images.githubusercontent.com/100233225/187046454-17dba6df-de1b-4ed7-9fe0-5635752f7951.png">
 
   </p>
   
